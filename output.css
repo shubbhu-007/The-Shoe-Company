@@ -520,30 +520,13 @@ video {
   position: fixed;
 }
 
-.left-\[\] {
-  left: ;
-}
-
 .left-\[50\%\] {
   left: 50%;
-}
-
-.-m-8 {
-  margin: -2rem;
-}
-
-.mx-12 {
-  margin-left: 3rem;
-  margin-right: 3rem;
 }
 
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.-mt-8 {
-  margin-top: -2rem;
 }
 
 .-mt-6 {
@@ -558,16 +541,8 @@ video {
   display: none;
 }
 
-.w-32 {
-  width: 8rem;
-}
-
-.w-\[756px\] {
-  width: 756px;
-}
-
-.w-\[px\] {
-  width: px;
+.w-24 {
+  width: 6rem;
 }
 
 .w-\[600px\] {
@@ -578,28 +553,12 @@ video {
   width: 100%;
 }
 
-.w-24 {
-  width: 6rem;
-}
-
-.max-w-3xl {
-  max-width: 48rem;
-}
-
 .max-w-6xl {
   max-width: 72rem;
 }
 
-.max-w-\[1\] {
-  max-width: 1;
-}
-
 .max-w-\[1440px\] {
   max-width: 1440px;
-}
-
-.max-w-\[\] {
-  max-width: ;
 }
 
 .-translate-x-\[50\%\] {
@@ -619,18 +578,6 @@ video {
   justify-content: space-between;
 }
 
-.space-x-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2rem * var(--tw-space-x-reverse));
-  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-10 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.5rem * var(--tw-space-x-reverse));
@@ -642,40 +589,8 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\] {
-  background-color: url;
-}
-
-.bg-\[url\(\)\] {
-  background-image: url();
-}
-
-.bg-\[url\(\"\.\/image\"\)\] {
-  background-image: url("./image");
-}
-
-.bg-\[url\(\"\.\/images\"\)\] {
-  background-image: url("./images");
-}
-
-.bg-\[url\(\"\.\/images\/background-\"\)\] {
-  background-image: url("./images/background-");
-}
-
-.bg-\[url\(\"\.\/images\/background-i\"\)\] {
-  background-image: url("./images/background-i");
-}
-
-.bg-\[url\(\"\.\/images\/background-hero\.png\"\)\] {
-  background-image: url("./images/background-hero.png");
-}
-
 .bg-\[url\(\'\.\/images\/background-hero\.png\'\)\] {
   background-image: url('./images/background-hero.png');
-}
-
-.bg-contain {
-  background-size: contain;
 }
 
 .bg-cover {
@@ -690,53 +605,23 @@ video {
   background-repeat: no-repeat;
 }
 
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .pt-36 {
   padding-top: 9rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
-}
-
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-xs {
@@ -748,20 +633,8 @@ video {
   font-weight: 700;
 }
 
-.leading-\[\] {
-  line-height: ;
-}
-
 .leading-\[48px\] {
   line-height: 48px;
-}
-
-.leading-\[px\] {
-  line-height: px;
-}
-
-.leading-\[72px\] {
-  line-height: 72px;
 }
 
 .text-white {
@@ -769,7 +642,20 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.section-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 @media (min-width: 768px) {
+  .section-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .md\:-mt-8 {
     margin-top: -2rem;
   }
@@ -790,22 +676,17 @@ video {
     flex-direction: row;
   }
 
-  .md\:flex-col {
-    flex-direction: column;
-  }
-
   .md\:items-center {
     align-items: center;
   }
 
-  .md\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .md\:bg-contain {
     background-size: contain;
+  }
+
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .md\:text-6xl {
@@ -828,11 +709,6 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(2rem * var(--tw-space-x-reverse));
     margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 
   .lg\:text-2xl {
