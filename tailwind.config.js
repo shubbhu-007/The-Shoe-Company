@@ -6,6 +6,9 @@ module.exports = {
       screens:{
         "media418" : "418px"
       },
+      backgroundImage:{
+        'Testimonial-background' : "url('./images/photo.png')",
+      }
     },
   },
   plugins: [],
